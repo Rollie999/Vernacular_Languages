@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    background: linear-gradient(rgba(0, 40, 60, 0.9), rgba(0, 40, 60, 0.9)), 
+                url('Africa.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.analysis-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border-top: 4px solid #00d4ff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background: rgba(0, 212, 255, 0.3);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.chart-container {
+    text-align: center;
+}
+
+.chart-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bar {
+    width: 60px;
+    background: #00d4ff;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    transition: background 0.3s;
+}
+
+.bar:hover {
+    background: #ffffff;
+}
+
+.bar::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    white-space: nowrap;
+}
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 20, 30, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    backdrop-filter: blur(10px);
+}
+
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #00d4ff;
+}
+
+.side-nav .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-trigger {
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 168, 204, 0.2);
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 999;
+}

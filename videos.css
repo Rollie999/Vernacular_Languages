@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    background: linear-gradient(rgba(0, 30, 50, 0.9), rgba(0, 30, 50, 0.9)), 
+                url('Africa.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.analysis-box {
+    background: rgba(0, 168, 204, 0.15);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    border: 1px solid rgba(0, 168, 204, 0.3);
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.video-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.video-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+
+.video-info {
+    padding: 20px;
+}
+
+.video-info h3 {
+    margin-top: 0;
+    color: #00d4ff;
+}
+
+.video-info p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 20, 30, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    backdrop-filter: blur(10px);
+}
+
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #00d4ff;
+}
+
+.side-nav .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-trigger {
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 168, 204, 0.2);
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 999;
+}

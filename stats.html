@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics | Foundational Languages</title>
+    <link rel="stylesheet" href="stats.css">
+</head>
+<body>
+      <div id="side-menu" class="side-nav">
+        <a href="about.html">About & Analysis</a>
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="poetry.html">Poetry</a>
+        <a href="stats.html">Statistics</a>
+        <a href="videos.html">Videos</a>
+        <a href="advocacy.html">Advocacy</a>
+    </div>
+
+<span class="menu-trigger" onclick="openNav()">&#9776; Menu</span>
+
+    <header>
+        <h1>Statistical Data</h1>
+    </header>
+
+    <main class="container">
+        <section class="analysis-box">
+            <h2>The Vanishing Voices</h2>
+            <p>Linguistic diversity in Africa is currently facing an unprecedented decline. Of the roughly 2,000 languages on the continent, over 400 are classified as endangered. This data highlights the "Critical Risk" category—languages with fewer than 1,000 speakers remaining—illustrating the urgent need for the advocacy proposed in this project.</p>
+        </section>
+
+        <section class="data-section">
+            <h3>Critically Endangered Languages (Approx. 2026 Data)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Country</th>
+                        <th>Estimated Speakers</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ongota</td>
+                        <td>Ethiopia</td>
+                        <td>< 10</td>
+                        <td>Nearly Extinct</td>
+                    </tr>
+                    <tr>
+                        <td>ǂʼAmkoe</td>
+                        <td>Botswana</td>
+                        <td>< 50</td>
+                        <td>Critically Endangered</td>
+                    </tr>
+                    <tr>
+                        <td>Gafat</td>
+                        <td>Ethiopia</td>
+                        <td>0 (Dormant)</td>
+                        <td>Extinct</td>
+                    </tr>
+                    <tr>
+                        <td>Nǁng</td>
+                        <td>South Africa</td>
+                        <td>< 5</td>
+                        <td>Nearly Extinct</td>
+                    </tr>
+                    <tr>
+                        <td>Bikya</td>
+                        <td>Cameroon</td>
+                        <td>< 10</td>
+                        <td>Critically Endangered</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="chart-container">
+            <h3>Endangerment by Region</h3>
+            <div class="chart-box">
+                <div class="bar" style="height: 80%;" data-label="Central Africa"></div>
+                <div class="bar" style="height: 60%;" data-label="East Africa"></div>
+                <div class="bar" style="height: 45%;" data-label="West Africa"></div>
+                <div class="bar" style="height: 30%;" data-label="Southern Africa"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="stats.js"></script>
+</body>
+</html>

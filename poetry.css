@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    color: white;
+    background: linear-gradient(rgba(0, 50, 75, 0.85), rgba(0, 50, 75, 0.85)), 
+                url('Africa.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 60px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.analysis-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #00a8cc;
+    padding: 30px;
+    margin-bottom: 50px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.poetry-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.poetry-block {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.poetry-block:hover {
+    transform: scale(1.02);
+}
+
+.poem-content {
+    white-space: pre-line;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #e0e0e0;
+}
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 20, 30, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    backdrop-filter: blur(10px);
+}
+
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #00d4ff;
+}
+
+.side-nav .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-trigger {
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 168, 204, 0.2);
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 999;
+}
