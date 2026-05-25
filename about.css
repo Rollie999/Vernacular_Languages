@@ -1,13 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Georgia', serif;
     color: white;
-    background: linear-gradient(rgba(0, 30, 45, 0.92), rgba(0, 30, 45, 0.92)), 
-                url('Africa.jpg');
+    background: linear-gradient(rgba(0, 50, 75, 0.85), rgba(0, 50, 75, 0.85)), 
+                url('Africa.jpg'); 
     background-size: cover;
     background-attachment: fixed;
-    line-height: 1.7;
 }
 
 header {
